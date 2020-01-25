@@ -1,27 +1,93 @@
-@font-face {
+/* @font-face {
   font-family: 'Montserrat';
   src: url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
-}
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap);
 
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: .25px;
   margin: 0;
   padding: 0;
 }
 
 .wrapper-1200 {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 50px;
 }
 
+.font-weight-3 {
+  font-weight: 300;
+}
+
+.font-weight-6 {
+  font-weight: 600;
+}
+
+.font-size-15 {
+  font-size: 1.5rem;
+}
+
+
+
 .navbar {
-  height: 65px;
-  background: #1E1E24;
+  height: 100px;
+  width: 100%;
+  background: green;
+}
+
+.width-100 {
+  width: 100%;
 }
 
 .color-white {
   color: #fff;
 }
+
+.orange-gradient {
+  background: #fc4a1a;
+  background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  /* background-color: #fbb034;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+}
+
+.mar-right-50 {
+  margin-right: 50px;
+}
+
+.ver-pad-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.hor-pad-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* FLEXBOX */
+.flex-row {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-bet {
+  justify-content: space-between;;
+}
+
 
 /* 
 .App {

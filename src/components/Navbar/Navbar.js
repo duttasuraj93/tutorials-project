@@ -16,12 +16,19 @@ class Navbar extends Component {
     }
     render() { 
         return ( 
-            <div className="navbar">
-                <div className="wrapper-1200">
-                    <div>
-                        <div></div>
+            <div className="navbar flex-row justify-content-center">
+                <div className="wrapper-1200 flex-row align-items-center justify-content-space-bet">
+                    <div className="font-size-15 font-weight-6">
+                        Dreamentia
                     </div>
-                    <div></div>
+                    <div className="flex-row align-items-center">
+                        <div className="mar-right-50">About</div>
+                        <div className="mar-right-50">Projects</div>
+                        <div>Contact</div>
+                    </div>
+                    <div class="orange-gradient ver-pad-8 hor-pad-25 color-white">
+                        Button
+                    </div>
                 </div>
             </div>
             // <Nav>
