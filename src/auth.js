@@ -16,39 +16,121 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-const email = "suraj@dutta.com";
-const password = "surajdutta";
+// const email = "suraj@dutta.com";
+// const password = "surajdutta";
+const auth = firebase.auth();
 
-firebase.auth().signInWithEmailAndPassword(email, password)
-  .then(function(result) {
-      console.log("before more result");
-      console.log(result);
-  }).catch(function(error) {
-      console.log("signin error");
-      console.log(error);
-});
+// firebase.auth().signInWithEmailAndPassword(email, password)
+//   .then(function(result) {
+//       console.log("before more result");
+//       console.log(result);
+//   }).catch(function(error) {
+//       console.log("signin error");
+//       console.log(error);
+// });
 
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        console.log("before user");
-        console.log(user);
-      // User is signed in.
-    } else {
-        console.log('not signed in');
-      // No user is signed in.
-    }
-});
+export const MyContext = React.createContext();
 
-const UserDetails = createContext();
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//         console.log("before user");
+//         console.log(user);
+        
+//       // User is signed in.
+//     } else {
+//         console.log('not signed in');
+//       // No user is signed in.
+//     }
+// });
 
-class firebaseAuth extends Component {
+
+
+class FirebaseAuth extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            isLoggedIn: false
+        }
     }
+
+    // const email = "suraj@dutta.com";
+    // const password = "surajdutta";
+    componentDidMount() {
+        console.log("calling here");
+        auth.signInWithEmailAndPassword("suraj@dutta.com", "surajdutta")
+        .then(function(result) {
+            // this.setState({
+            //     isLoggedIn: true,
+            // })
+            console.log("before more result");
+            console.log(result);
+        }).catch(function(error) {
+            console.log("signin error");
+            console.log(error);
+        });
+
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user) {
+                console.log("before user");
+                console.log(user);
+                // return user;
+                this.setState({
+                    isLoggedIn: true
+                })
+                return <MyContext.Provider value={true}></MyContext.Provider>
+                
+            // User is signed in.
+            } else {
+                console.log('not signed in');
+            // No user is signed in.
+            }
+        });
+
+    }
+
+    // auth.signInWithEmailAndPassword("suraj@dutta.com", "surajdutta")
+    // .then(function(result) {
+    //     console.log("before more result");
+    //     console.log(result);
+    // }).catch(function(error) {
+    //     console.log("signin error");
+    //     console.log(error);
+    // });
+
+    // export const MyContext = React.createContext();
+
+    // firebase.auth().onAuthStateChanged(function(user) {
+    //     if (user) {
+    //         console.log("before user");
+    //         console.log(user);
+            
+    //     // User is signed in.
+    //     } else {
+    //         console.log('not signed in');
+    //     // No user is signed in.
+    //     }
+    // });
+
+
     render() { 
-        return console.log("fuck off");
+        // console.log(this.context);
+        // console.log("hell");
+        // return console.log("fuck off");
+        if(!this.state.isLoggedIn) {
+            return (
+                <MyContext.Provider value={this.state.isLoggedIn}>
+                    {this.props.children}
+                </MyContext.Provider>
+            )
+        } else {
+            return (
+                <MyContext.Provider value={this.state.isLoggedIn}>
+                    {this.props.children}
+                </MyContext.Provider>
+            )
+        }
+
     }
 }
  
-export default firebaseAuth;
+export default FirebaseAuth;
