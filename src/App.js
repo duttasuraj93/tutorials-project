@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './routes/Home/Home2';
+import Home from './routes/Home/Home';
 
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
+function App() {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {  }
+    // }
+
+    const [firebaseInitialized, setFirebaseInitialized] = useState(false);
     
-    render() { 
-        return ( 
-            <Router>
-                <React.Fragment>
-                    <Route exact path="/"><Home /></Route>
-                </React.Fragment>
-            </Router>
-        );
-    }
+    return ( 
+        <Router>
+            <React.Fragment>
+                <Route exact path="/"><Home /></Route>
+            </React.Fragment>
+        </Router>
+    );
 }
  
 export default App;

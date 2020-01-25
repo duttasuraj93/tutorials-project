@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import FirebaseAuth, { MyContext } from '../../auth';
+import FirebaseAuth, { MyContext, LoggedIn } from '../../auth';
 
 
 class Home2 extends Component {
+    // static contextType = LoggedIn;
+
     constructor(props) {
         super(props);
         this.state = {  }
@@ -11,14 +13,15 @@ class Home2 extends Component {
         return ( 
             <div>
                 <FirebaseAuth>
-                    <MyContext.Consumer>
+                    <LoggedIn.Consumer>
                         {(consumer) => {
+                            console.log("before consumer");
                             console.log(consumer);
                             return (
                                 <div>Im inside the consumer</div>
                             )
                         }}
-                    </MyContext.Consumer>
+                    </LoggedIn.Consumer>
                 </FirebaseAuth>
             </div>
         );

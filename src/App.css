@@ -1,3 +1,29 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+}
+
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-1200 {
+  width: 1200px;
+}
+
+.navbar {
+  height: 65px;
+  background: #1E1E24;
+}
+
+.color-white {
+  color: #fff;
+}
+
+/* 
 .App {
   text-align: center;
 }
@@ -35,4 +61,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

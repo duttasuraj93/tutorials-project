@@ -29,6 +29,8 @@ const auth = firebase.auth();
 //       console.log(error);
 // });
 
+export const LoggedIn = React.createContext(false);
+
 export const MyContext = React.createContext();
 
 // firebase.auth().onAuthStateChanged(function(user) {
@@ -57,34 +59,34 @@ class FirebaseAuth extends Component {
     // const password = "surajdutta";
     componentDidMount() {
         console.log("calling here");
-        auth.signInWithEmailAndPassword("suraj@dutta.com", "surajdutta")
-        .then(function(result) {
-            // this.setState({
-            //     isLoggedIn: true,
-            // })
-            console.log("before more result");
-            console.log(result);
-        }).catch(function(error) {
-            console.log("signin error");
-            console.log(error);
-        });
+        // firebase.auth().signInWithEmailAndPassword("suraj@dutta.com", "surajdutta")
+        // .then(function(result) {
+        //     // this.setState({
+        //     //     isLoggedIn: true,
+        //     // })
+        //     console.log("before more result");
+        //     console.log(result);
+        // }).catch(function(error) {
+        //     console.log("signin error");
+        //     console.log(error);
+        // });
 
-        firebase.auth().onAuthStateChanged((user) => {
-            if (user) {
-                console.log("before user");
-                console.log(user);
-                // return user;
-                this.setState({
-                    isLoggedIn: true
-                })
-                return <MyContext.Provider value={true}></MyContext.Provider>
+        // firebase.auth().onAuthStateChanged((user) => {
+        //     if (user) {
+        //         console.log("before user");
+        //         console.log(user);
+        //         // return user;
+        //         this.setState({
+        //             isLoggedIn: true
+        //         })
+        //         // return <MyContext.Provider value={true}></MyContext.Provider>
                 
-            // User is signed in.
-            } else {
-                console.log('not signed in');
-            // No user is signed in.
-            }
-        });
+        //     // User is signed in.
+        //     } else {
+        //         console.log('not signed in');
+        //     // No user is signed in.
+        //     }
+        // });
 
     }
 
@@ -116,19 +118,25 @@ class FirebaseAuth extends Component {
         // console.log(this.context);
         // console.log("hell");
         // return console.log("fuck off");
-        if(!this.state.isLoggedIn) {
-            return (
-                <MyContext.Provider value={this.state.isLoggedIn}>
-                    {this.props.children}
-                </MyContext.Provider>
-            )
-        } else {
-            return (
-                <MyContext.Provider value={this.state.isLoggedIn}>
-                    {this.props.children}
-                </MyContext.Provider>
-            )
-        }
+        // if(!this.state.isLoggedIn) {
+        //     return (
+        //         <MyContext.Provider value={this.state.isLoggedIn}>
+        //             {this.props.children}
+        //         </MyContext.Provider>
+        //     )
+        // } else {
+        //     return (
+        //         <MyContext.Provider value={this.state.isLoggedIn}>
+        //             {this.props.children}
+        //         </MyContext.Provider>
+        //     )
+        // }
+        return (
+            <LoggedIn.Provider value={this.state.isLoggedIn}>
+            {/* <LoggedIn.Provider value="hello there"> */}
+                {this.props.children}
+            </LoggedIn.Provider>
+        )
 
     }
 }
