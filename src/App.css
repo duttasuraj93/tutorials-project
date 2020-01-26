@@ -30,8 +30,8 @@ body {
   font-weight: 600;
 }
 
-.font-size-12 {
-  font-size: 1.2rem;
+.font-size-13 {
+  font-size: 1.3rem;
 }
 
 .font-size-15 {
@@ -46,6 +46,17 @@ body {
   line-height: 1.2;
 }
 
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.z-index-neg {
+  z-index: -1;
+}
 
 .navbar {
   height: 100px;
@@ -67,6 +78,10 @@ body {
 
 .color-07c4f1 {
   color: #07c4f1;
+}
+
+.bgcolor-white {
+  background-color: #fff;
 }
 
 .orange-gradient {
@@ -117,8 +132,14 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   }
 }
 
+
+
 .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%)}
 .btn-grad:hover { background-position: right center; }
+
+.mar-right-20 {
+  margin-right: 20px;
+}
 
 .mar-right-50 {
   margin-right: 50px;
@@ -126,6 +147,10 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
 
 .mar-bottom-10 {
   margin-bottom: 10px;
+}
+
+.mar-bottom-15 {
+  margin-bottom: 15px;
 }
 
 .mar-bottom-20 {
@@ -148,6 +173,10 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
 
 .width-48 {
   width: 48%;
+}
+
+.width-150px {
+  width: 150px;
 }
 
 .width-200px {
@@ -223,3 +252,34 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
     transform: rotate(360deg);
   }
 } */
+
+
+
+
+
+
+/* revamp */
+.orange-gradient-border-button {
+  margin: 2px 2px;
+  padding: 6px 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.absput-me-fake-heading {
+  top: -30px;
+  left: 85px;
+  opacity: 0.1;
+}
