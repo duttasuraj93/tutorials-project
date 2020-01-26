@@ -186,6 +186,10 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
   margin-bottom: 20px;
 }
 
+.mar-bottom-100 {
+  margin-bottom: 100px;
+}
+
 .ver-pad-8 {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -202,6 +206,18 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
 
 .bor-radius-full {
   border-radius: 50%;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-24 {
+  width: 24%;
+}
+
+.width-38 {
+  width: 38%;
 }
 
 .width-48 {
@@ -255,6 +271,10 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
 
 .justify-content-end {
   justify-content: flex-end;
+}
+
+.flex-wrap-wrap {
+  flex-wrap: wrap;
 }
 
 

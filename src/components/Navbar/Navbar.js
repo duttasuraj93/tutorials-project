@@ -27,7 +27,7 @@ class Navbar extends Component {
                         <div className="color-1B1B1B">Contact</div>
                     </div>
                     <div className="width-200px flex-row justify-content-end">
-                        <div class="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer">Button</div>
+                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer">Button</div>
                     </div>
                 </div>
             </div>

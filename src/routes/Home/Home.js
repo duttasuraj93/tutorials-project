@@ -7,13 +7,13 @@ const Home = () => {
         // <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestias accusamus explicabo numquam possimus. Perspiciatis tenetur labore dicta nam explicabo?</div>
         <div>
             <Navbar />
-            <div className="width-100 flex-row justify-content-center">
+            <div className="width-100 flex-row justify-content-center mar-bottom-100">
                 <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
                     <div className="width-48">
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">Lorem ipsum dolor sit.</div>
                         <div className="font-weight-6 font-size-3 line-height-12 color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet.</div>
                         <div className="color-1B1B1B mar-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus magni ullam vero assumenda.</div>
-                        <div class="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Button</div>
+                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Button</div>
                     </div>
                     <div className="width-48">
                         <img className="width-100" src="https://image.flaticon.com/icons/svg/1146/1146869.svg" alt=""/>
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
 
 
-            <div className="width-100 flex-row justify-content-center">
+            <div className="width-100 flex-row justify-content-center mar-bottom-100">
                 <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
                     <div className="width-48 pos-relative">
                         <div className="absput-me-fake-heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">ABOUT</div>
@@ -30,26 +30,30 @@ const Home = () => {
                         <div className="color-1B1B1B mar-bottom-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint, dolores atque esse aspernatur voluptates enim nemo, tenetur ratione necessitatibus iste, maxime similique iusto ad libero provident aliquid hic quam.</div>
                         <div className="color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ducimus tempore, libero temporibus porro?</div>
                         <div className="flex-row align-items-center">
-                            <div class="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Introduction</div>
-                            <div class="orange-gradient width-150px flex-row align-items-center justify-content-center color-white bor-radius-30 cursor-pointer">
+                            <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Introduction</div>
+                            <div className="orange-gradient width-150px flex-row align-items-center justify-content-center color-white bor-radius-30 cursor-pointer">
                                 <div className="orange-gradient-border-button width-100 flex-row justify-content-center color-1B1B1B bgcolor-white bor-radius-30">Learn More</div>
                             </div>
                         </div>
                     </div>
-                    <div className="width-48">
-                        <div>
+                    <div className="width-48 flex-row flex-wrap-wrap">
+                        <div className="width-38">
                             <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-f5af19 pos-relative">
                                 <div className="text-align-center color-1B1B1B">Frontend Development</div>
                                 <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center orange-gradient-2">
                                     <img className="hidden-cat-image" src="https://image.flaticon.com/icons/svg/1383/1383397.svg" alt=""/>
                                 </div>
                             </div>
+                        </div>
+                        <div className="width-38">
                             <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-4286f4 pos-relative">
                                 <div className="text-align-center color-1B1B1B">Backend Development</div>
                                 <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center dark-ocean-gradient">
                                     <img className="hidden-cat-image" src="https://image.flaticon.com/icons/svg/1383/1383397.svg" alt=""/>
                                 </div>
                             </div>
+                        </div>
+                        <div className="width-38">
                             <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-FF0099 pos-relative">
                                 <div className="text-align-center color-1B1B1B">UI/UX Sense</div>
                                 <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center yoda-gradient">
@@ -61,6 +65,60 @@ const Home = () => {
                 </div>
             </div>
 
+
+            <div className="width-100 flex-row justify-content-center">
+                <div className="wrapper-1200 flex-row flex-wrap-wrap justify-content-space-bet">
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/nodejs.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/javascript.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/mysql.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/jquery.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/mongodb.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center mar-bottom-20">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/python.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/php.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/react.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/html.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/git.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/express.svg')} alt=""/>
+                    </div>
+                    <div className="width-15 flex-row justify-content-center">
+                        <img className="height-100px" src={require('../../assets/images/programming-languages/css.svg')} alt=""/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="width-100 flex-row justify-content-center mar-bottom-100">
+                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                    <div className="width-48">
+                        <img className="width-100" src={require('../../assets/images/contact-form.jpg')} alt=""/>
+                    </div>
+                    <div className="width-48">
+                        
+                    </div>
+                </div>
+            </div>
+            
 
             <FirebaseAuth>
                 <LoggedIn.Consumer>
