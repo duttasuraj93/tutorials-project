@@ -132,10 +132,39 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   }
 }
 
+.bor-2px-f5af19 {
+  border: 2px solid #f5af19;
+}
+
+.bor-2px-4286f4 {
+  border: 2px solid #4286f4;
+}
+
+.bor-2px-FF0099 {
+  border: 2px solid #FF0099;
+}
 
 
 .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%)}
 .btn-grad:hover { background-position: right center; }
+
+.orange-gradient-2 {
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+
+.dark-ocean-gradient {
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.yoda-gradient {
+  background: #FF0099;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 .mar-right-20 {
   margin-right: 20px;
@@ -171,6 +200,10 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   border-radius: 30px;
 }
 
+.bor-radius-full {
+  border-radius: 50%;
+}
+
 .width-48 {
   width: 48%;
 }
@@ -181,6 +214,18 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
 
 .width-200px {
   width: 200px;
+}
+
+.height-100px {
+  height: 100px;
+}
+
+.height-150px {
+  height: 150px;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .cursor-pointer {
@@ -261,7 +306,7 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
 /* revamp */
 .orange-gradient-border-button {
   margin: 2px 2px;
-  padding: 6px 28px;
+  padding: 6px 0px;
 }
 
 
@@ -282,4 +327,39 @@ background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
   top: -30px;
   left: 85px;
   opacity: 0.1;
+}
+
+
+.hidden-cat-image {
+  height: 50%;
+}
+
+
+.hidden-cats {
+  /* display: none; */
+  height: 10%;
+  width: 10%;
+  /* background: #fff; */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.main-cat-cont:hover > .hidden-cats {
+  height: 100%;
+  width: 100%;
+  /* display: block; */
+  opacity: 1;
+  
+}
+
+.main-cat-cont {
+  transition: all .3s;
+}
+
+.main-cat-cont:hover {
+  transform: scale(1.1);
 }
