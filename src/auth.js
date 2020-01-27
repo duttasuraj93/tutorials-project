@@ -131,12 +131,14 @@ class FirebaseAuth extends Component {
         //         </MyContext.Provider>
         //     )
         // }
-        return (
-            <LoggedIn.Provider value={this.state.isLoggedIn}>
-            {/* <LoggedIn.Provider value="hello there"> */}
-                {this.props.children}
-            </LoggedIn.Provider>
-        )
+        // return (
+        //     <LoggedIn.Provider value={this.state.isLoggedIn}>
+        //     {/* <LoggedIn.Provider value="hello there"> */}
+        //         {this.props.children}
+        //     </LoggedIn.Provider>
+        // )
+        const classes = LoggedIn();
+        return classes;
 
     }
 }

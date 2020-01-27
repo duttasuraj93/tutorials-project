@@ -3,12 +3,13 @@ import FirebaseAuth, { MyContext, LoggedIn } from '../../auth';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Home = () => {
+    console.log(FirebaseAuth);
     return ( 
         // <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestias accusamus explicabo numquam possimus. Perspiciatis tenetur labore dicta nam explicabo?</div>
         <div>
             <Navbar />
             <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 intro__wrapper flex-row justify-content-space-bet align-items-center">
                     <div className="width-48">
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">Lorem ipsum dolor sit.</div>
                         <div className="font-weight-6 font-size-3 line-height-12 color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet.</div>
@@ -23,13 +24,13 @@ const Home = () => {
 
 
             <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 about__wrapper flex-row justify-content-space-bet align-items-center">
                     <div className="width-48 pos-relative">
                         <div className="absput-me-fake-heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">ABOUT</div>
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">about me</div>
                         <div className="color-1B1B1B mar-bottom-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint, dolores atque esse aspernatur voluptates enim nemo, tenetur ratione necessitatibus iste, maxime similique iusto ad libero provident aliquid hic quam.</div>
                         <div className="color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ducimus tempore, libero temporibus porro?</div>
-                        <div className="flex-row align-items-center">
+                        <div className="about__wrapper-buttons flex-row align-items-center">
                             <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer box-shadow-2 mar-right-20">Introduction</div>
                             <div className="orange-gradient width-150px flex-row align-items-center justify-content-center color-white bor-radius-30 cursor-pointer">
                                 <div className="orange-gradient-border-button width-100 flex-row justify-content-center color-1B1B1B bgcolor-white bor-radius-30">Learn More</div>
@@ -67,7 +68,7 @@ const Home = () => {
 
 
             <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 project__wrapper flex-row justify-content-space-bet align-items-center flex-wrap-wrap">
                     <div className="project-box translate-y-2 width-26 box-shadow-3 bor-radius-4 ver-pad-30 hor-pad-30 cursor-pointer">
                         <div className="color-pink-red font-size-07 bgcolor-pink-red flex-inline ver-pad-2 hor-pad-12 bor-radius-4 mar-bottom-20 text-uppercase">Tutorial</div>
                         <div className="color-1B1B1B font-size-15 font-weight-6 mar-bottom-15">Lorem ipsum dolor sit amet.</div>
@@ -133,7 +134,7 @@ const Home = () => {
 
 
             <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 contact__wrapper flex-row justify-content-space-bet align-items-center">
                     <div className="width-48 pos-relative align-self-start">
                         <div className="absput-me-fake-heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">CONTACT</div>
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">contact me</div>
@@ -175,7 +176,7 @@ const Home = () => {
 
 
             <div className="width-100 flex-row justify-content-center bgcolor-1B1B1B ver-pad-20">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 footer__wrapper flex-row justify-content-space-bet align-items-center">
                     <div className="color-white">&#9400; 2020 All rights reserved.</div>
                     <div className="flex-row align-items-center">
                         <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">

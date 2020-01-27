@@ -5,6 +5,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap);
 
+html, body {
+  overflow-x:hidden 
+} 
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -71,7 +74,7 @@ body {
 }
 
 .navbar {
-  height: 100px;
+  height: 70px;
   width: 100%;
   /* background: green; */
 }
@@ -81,7 +84,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #f5af19;
+  color: #1B1B1B;
 }
 
 .text-underline {
@@ -173,6 +176,10 @@ body {
 
 .bgcolor-f6f6f6 {
   background-color: #f6f6f6;
+}
+
+.bgcolor-07c4f1 {
+  background-color: #07c4f1;
 }
 
 .bgcolor-sky-blue {
@@ -571,4 +578,119 @@ background: linear-gradient(to right, #493240, #FF0099); /* W3C, IE 10+/ Edge, F
   /* bottom: 0; */
   opacity: 0;
   transition: all .3s;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* .navbar__options > div:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .navbar__signup-button-container {
+    display: none;
+  }
+
+  .navbar__wrapper {
+    padding: 12px;
+  }
+
+  .navbar__site-name {
+    width: unset;
+  }
+
+  .navbar__site-name > div {
+    font-size: 1.1rem;
+  }
+
+  .navbar .font-size-1 {
+    font-size: 0.9rem;
+  } */
+
+  .navbar {
+    margin-bottom: 50px;
+  }
+
+  .wrapper-1200 {
+    padding: 0px 12px;
+  }
+
+  .intro__wrapper, .about__wrapper, .contact__wrapper {
+    flex-direction: column;
+  }
+
+  .intro__wrapper > div, .about__wrapper > div, .contact__wrapper > div {
+    width: 100%;
+  }
+
+  .intro__wrapper > div:first-child, .about__wrapper > div:first-child, .contact__wrapper > div:first-child{
+    align-items: flex-start;
+  }
+
+  .about__wrapper > div:not(:first-child) {
+    display: none;
+  }
+
+  .project__wrapper > div {
+    width: 100%;
+  }
+
+  .project__wrapper > div {
+    margin-bottom: 15px;
+  }
+
+  .about__wrapper-buttons {
+    flex-direction: column;
+  }
+
+  .about__wrapper-buttons > div:first-child {
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+
+  .font-size-3 {
+    font-size: 2rem;
+  }
+
+  .navbar__signup-button-container {
+    display: none;
+  }
+
+  .navbar__site-name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: unset; */
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__wrapper > div:first-child {
+    margin-bottom: 15px;
+  }
+
+  .contact__wrapper > div:first-child {
+    margin-bottom: 15px;
+  }
+
+  .mar-bottom-100 {
+    margin-bottom: 30px;
+  }
+
+  .navbar__options > div {
+    margin-right: 10px;
+  }
 }
