@@ -22,12 +22,12 @@ class Navbar extends Component {
                         <div className="font-size-15 font-weight-6">Daydream</div>
                     </div>
                     <div className="flex-row align-items-center">
-                        <div className="mar-right-50 color-1B1B1B">About</div>
-                        <div className="mar-right-50 color-1B1B1B">Projects</div>
-                        <div className="color-1B1B1B">Contact</div>
+                        <div className="mar-right-50 color-1B1B1B nav-item translate-y-2 cursor-pointer">About</div>
+                        <div className="mar-right-50 color-1B1B1B nav-item translate-y-2 cursor-pointer">Projects</div>
+                        <div className="color-1B1B1B nav-item translate-y-2 cursor-pointer">Contact</div>
                     </div>
                     <div className="width-200px flex-row justify-content-end">
-                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer">Button</div>
+                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer box-shadow-2">Button</div>
                     </div>
                 </div>
             </div>
