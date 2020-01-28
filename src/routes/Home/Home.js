@@ -9,23 +9,23 @@ const Home = () => {
         <div>
             <Navbar />
 
-            <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+            <div className="width-100 mobile-each__section flex-row justify-content-center mar-bottom-100">
+                <div className="wrapper-1200 mobile-resp__wrap flex-row justify-content-space-bet align-items-center">
                     <div className="width-48">
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">Lorem ipsum dolor sit.</div>
                         <div className="font-weight-6 font-size-3 line-height-12 color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet.</div>
                         <div className="color-1B1B1B mar-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus magni ullam vero assumenda.</div>
                         <div className="orange-gradient translate-y-2 width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Button</div>
                     </div>
-                    <div className="width-48">
-                        <img className="width-100" src={require('../../assets/images/sunshine.svg')} alt=""/>
+                    <div className="width-48 homepage__banner-container pos-relative">
+                        <img className="width-100 homepage__banner-image" src={require('../../assets/images/sunshine.svg')} alt=""/>
                     </div>
                 </div>
             </div>
 
 
-            <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+            <div className="width-100 mobile-each__section flex-row justify-content-center mar-bottom-100">
+                <div className="wrapper-1200 mobile-resp__wrap flex-row justify-content-space-bet align-items-center">
                     <div className="width-48 pos-relative">
                         <div className="fake__heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">ABOUT</div>
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">about me</div>
@@ -68,7 +68,7 @@ const Home = () => {
             </div>
 
 
-            <div className="width-100 flex-row justify-content-center mar-bottom-100">
+            <div className="width-100 mobile-each__section flex-row justify-content-center mar-bottom-100">
                 <div className="wrapper-1200 pos-relative">
                     <div className="fake__heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">PROJECTS</div>
                     <div className="font-size-13 mar-bottom-15 color-07c4f1 mar-bottom-20">projects</div>
@@ -102,8 +102,8 @@ const Home = () => {
             </div>
 
 
-            <div className="width-100 flex-row justify-content-center mar-bottom-100">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+            <div className="width-100 mobile-each__section flex-row justify-content-center mar-bottom-100">
+                <div className="wrapper-1200 mobile-resp__wrap flex-row justify-content-space-bet align-items-center">
                     <div className="width-48 pos-relative align-self-start">
                         <div className="fake__heading font-weight-6 font-size-3 color-07c4f1 pos-absolute z-index-neg">CONTACT</div>
                         <div className="font-size-13 mar-bottom-15 color-07c4f1">contact me</div>
@@ -142,7 +142,7 @@ const Home = () => {
 
 
             <div className="width-100 flex-row justify-content-center bgcolor-1B1B1B ver-pad-20">
-                <div className="wrapper-1200 flex-row justify-content-space-bet align-items-center">
+                <div className="wrapper-1200 mobile-resp__wrap flex-row justify-content-space-bet align-items-center">
                     <div className="color-white font-size-09">&#9400; 2020 All rights reserved.</div>
                     <div className="flex-row align-items-center">
                         <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">
