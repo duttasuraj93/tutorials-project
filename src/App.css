@@ -29,6 +29,13 @@ textarea {
   vertical-align: top;
 }
 
+button {
+  font-size: 1rem;
+  border: none;
+  padding: 0px;
+  line-height: 1.5;
+}
+
 input:focus ~ .input__animation, textarea:focus ~ .input__animation {
   opacity: 1;
   width: 100%;

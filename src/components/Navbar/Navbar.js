@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
 
-// import styled from 'styled-components';
-
-
-// const Nav = styled.div`
-//     height: 100px;
-//     background: #000;
-//     width: 100%;
-// `;
-
 class Navbar extends Component {
     constructor(props) {
         super(props);
@@ -16,12 +7,18 @@ class Navbar extends Component {
 
         }
     }
+
+    scrollBelow = () => {
+        window.scroll({top: 1000, left: 0, behavior: 'smooth' })
+    }
+
+
     render() { 
         return ( 
             <div className="navbar flex-row justify-content-center height-100px">
                 <div className="navbar__wrapper wrapper-1200 flex-row align-items-center justify-content-space-bet">
                     <div className="navbar__site-name width-200px">
-                        <div className="font-size-15 font-weight-6">Daydream</div>
+                        <div onClick={() => this.scrollBelow()} className="font-size-15 font-weight-6 cursor-pointer">Daydream</div>
                     </div>
                     <div className="navbar__options flex-row align-items-center">
                         <div className="mar-right-50 color-1B1B1B nav-item translate-y-2 font-size-1 cursor-pointer">About</div>
