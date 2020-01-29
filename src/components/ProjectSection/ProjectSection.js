@@ -21,7 +21,7 @@ const ProjectSection = () => {
                         <div className="color-f5af19 font-size-09 learn-more">Learn more<span className="mar-left-5 translate-x-5 flex-inline">&#8594;</span></div>
                     </Link>
                     <Link className="project-box translate-x-5-parent translate-y-2 width-30 box-shadow-3 bor-radius-4 ver-pad-30 hor-pad-30 cursor-pointer bgcolor-white mar-bottom-20" to={"/tutorials/javascript"}>
-                        <div className="color-07c4f1 font-size-07 bgcolor-07c4f1-opacity flex-inline ver-pad-2 hor-pad-12 bor-radius-4 mar-bottom-20 text-uppercase">Project</div>
+                        <div className="color-EA4F70 font-size-07 bgcolor-EA4F70-opacity flex-inline ver-pad-2 hor-pad-12 bor-radius-4 mar-bottom-20 text-uppercase">Tutorial</div>
                         <div className="color-1B1B1B font-size-15 font-weight-6 mar-bottom-15">Lorem ipsum dolor sit amet.</div>
                         <div className="color-1B1B1B mar-bottom-30">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, maiores!</div>
                         <div className="color-f5af19 font-size-09 learn-more">Learn more<span className="mar-left-5 translate-x-5 flex-inline">&#8594;</span></div>

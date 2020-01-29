@@ -13,6 +13,14 @@ class Home extends Component {
         this.state = {}
     }
 
+    // PORT=3001 npm start
+
+    // componentDidMount() {
+    //     fetch('/users').then(res => res.json()).then(res => {
+    //         console.log(res);
+    //     })
+    // }
+
 
     render() { 
         

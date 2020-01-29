@@ -272,6 +272,10 @@ input:focus ~ .input__animation, textarea:focus ~ .input__animation {
   margin-bottom: 30px;
 }
 
+.mar-bottom-50 {
+  margin-bottom: 50px;
+}
+
 .mar-bottom-100 {
   margin-bottom: 100px;
 }
