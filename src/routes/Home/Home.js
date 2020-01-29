@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Slide from 'react-reveal/Slide';
 import Navbar from '../../components/Navbar/Navbar';
 import StartingSection from '../../components/StartingSection/StartingSection';
 import AboutMe from '../../components/AboutMe/AboutMe';
@@ -29,15 +30,15 @@ class Home extends Component {
             <div>
                 <Navbar />
 
-                <StartingSection />
-    
-                <AboutMe />
-
-                <ProjectSection />
-    
-                <ContactSection />
+                <Slide bottom ssrFadeout>
+                    <StartingSection />
+                    <AboutMe />
+                    <ProjectSection />
+                    <ContactSection />
+                </Slide>
 
                 <Footer />
+
             </div>
         );
     }
