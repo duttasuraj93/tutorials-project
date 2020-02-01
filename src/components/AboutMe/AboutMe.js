@@ -16,31 +16,13 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-                <div className="width-48 flex-row flex-wrap-wrap justify-content-evenly">
-                    {/* <div className="width-34 flex-row justify-content-end">
-                        <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-f5af19 pos-relative">
-                            <div className="text-align-center color-1B1B1B">Frontend Development</div>
-                            <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center orange-gradient">
-                                <img className="hidden-cat-image" src="https://image.flaticon.com/icons/svg/1383/1383397.svg" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="width-34">
-                        <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-4286f4 pos-relative">
-                            <div className="text-align-center color-1B1B1B">Backend Development</div>
-                            <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center">
-                                <img className="hidden-cat-image" src="https://image.flaticon.com/icons/svg/1383/1383397.svg" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="width-34 flex-row justify-content-center">
-                        <div className="main-cat-cont flex-row align-items-center justify-content-center height-150px width-150px bor-radius-full bor-2px-FF0099 pos-relative">
-                            <div className="text-align-center color-1B1B1B">UI/UX Sense</div>
-                            <div className="pos-absolute hidden-cats flex-row align-items-center justify-content-center yoda-gradient">
-                                <img className="hidden-cat-image" src="https://image.flaticon.com/icons/svg/1383/1383397.svg" alt=""/>
-                            </div>
-                        </div>
-                    </div> */}
+                <div className="width-48 pos-relative">
+                    
+                    {/* <img className="blue-gear pos-relative height-200px" src={require('../../assets/images/blue-gear.svg')} alt=""/>
+                    <img className="red-gear pos-relative height-120px" src={require('../../assets/images/red-gear.svg')} alt=""/>
+                    <img className="green-gear pos-relative height-120px" src={require('../../assets/images/green-gear.svg')} alt=""/> */}
+
+
                 </div>
             </div>
         </div>

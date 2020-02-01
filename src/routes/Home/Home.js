@@ -30,8 +30,9 @@ class Home extends Component {
             <div>
                 <Navbar />
 
+                <StartingSection />
+                
                 <Slide bottom ssrFadeout>
-                    <StartingSection />
                     <AboutMe />
                     <ProjectSection />
                     <ContactSection />

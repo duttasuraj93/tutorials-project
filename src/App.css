@@ -384,8 +384,16 @@ input:focus ~ .input__animation, textarea:focus ~ .input__animation {
   height: 100px;
 }
 
+.height-120px {
+  height: 120px;
+}
+
 .height-150px {
   height: 150px;
+}
+
+.height-200px {
+  height: 200px;
 }
 
 .height-width-3 {
@@ -462,6 +470,11 @@ input:focus ~ .input__animation, textarea:focus ~ .input__animation {
 .align-self-start {
   align-self: flex-start;
 }
+
+
+
+
+
 
 
 
