@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 
 const Footer = () => {
     return (
@@ -7,19 +8,29 @@ const Footer = () => {
                 <div className="color-white font-size-09">&#9400; 2020 All rights reserved.</div>
                 <div className="flex-row align-items-center">
                     <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">
-                        <img className="height-20px" src={require('../../assets/images/footer/facebook.svg')} alt=""/>
+                        <LazyLoad>
+                            <img className="height-20px" src={require('../../assets/images/footer/facebook.svg')} alt=""/>
+                        </LazyLoad>
                     </div>
                     <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">
-                        <img className="height-20px" src={require('../../assets/images/footer/instagram.svg')} alt=""/>
+                        <LazyLoad>
+                            <img className="height-20px" src={require('../../assets/images/footer/instagram.svg')} alt=""/>
+                        </LazyLoad>
                     </div>
                     <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">
-                        <img className="height-20px" src={require('../../assets/images/footer/linkedin.svg')} alt=""/>
+                        <LazyLoad>
+                            <img className="height-20px" src={require('../../assets/images/footer/linkedin.svg')} alt=""/>
+                        </LazyLoad>
                     </div>
                     <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2 mar-right-20">
-                        <img className="height-20px" src={require('../../assets/images/footer/github.svg')} alt=""/>
+                        <LazyLoad>
+                            <img className="height-20px" src={require('../../assets/images/footer/github.svg')} alt=""/>
+                        </LazyLoad>
                     </div>
                     <div className="height-width-40 flex-row justify-content-center align-items-center orange-gradient-2 bor-radius-full cursor-pointer box-shadow-2 translate-y-2">
-                        <img className="height-20px" src={require('../../assets/images/footer/twitter.svg')} alt=""/>
+                        <LazyLoad>
+                            <img className="height-20px" src={require('../../assets/images/footer/twitter.svg')} alt=""/>
+                        </LazyLoad>
                     </div>
                 </div>
             </div>

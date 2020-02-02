@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import ContactForm from './ContactForm/ContactForm';
 
 const ContactSection = () => {
@@ -10,7 +11,13 @@ const ContactSection = () => {
                     <div className="font-size-13 mar-bottom-15 color-07c4f1">contact me</div>
                     <div className="font-weight-6 font-size-3 line-height-12 color-1B1B1B mar-bottom-20">Let's talk about everything.</div>
                     <div className="color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint, dolores atque esse aspernatur voluptates enim.</div>
-                    <div>Powered by<span className="mar-left-5"> <img className="height-15px" src={require('../../assets/images/sendgrid.svg')} alt=""/></span></div>
+                    <div>Powered by
+                        <span className="mar-left-5">
+                            <LazyLoad>
+                                <img className="height-15px" src={require('../../assets/images/sendgrid.svg')} alt=""/>
+                            </LazyLoad>
+                        </span>
+                    </div>
                 </div>
                 <div className="width-48">
                     <ContactForm />
