@@ -1,6 +1,6 @@
 import React from 'react';
 import Typist from 'react-typist';
-import Zoom from 'react-reveal/Zoom';
+// import Zoom from 'react-reveal/Zoom';
 
 const StartingSection = () => {
     return (
@@ -14,12 +14,13 @@ const StartingSection = () => {
                     </Typist>
                     <div className="font-weight-6 font-size-3 line-height-12 color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet.</div>
                     <div className="color-1B1B1B mar-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus magni ullam vero assumenda.</div>
-                    <div className="orange-gradient translate-y-2 width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Get started</div>
+                    <div className="primary-background translate-y-2 width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer mar-right-20">Get started</div>
                 </div>
                 <div className="width-48 homepage__banner-container pos-relative">
-                    <Zoom ssrFadeout>
+                    {/* <Zoom ssrFadeout>
                         <img className="width-100 homepage__banner-image" src={require('../../assets/images/sunshine.svg')} alt=""/>
-                    </Zoom>
+                    </Zoom> */}
+                    <img className="width-100 homepage__banner-image" src={require('../../assets/images/sunshine.svg')} alt=""/>
                 </div>
             </div>
         </div>

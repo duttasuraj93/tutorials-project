@@ -10,8 +10,8 @@ const AboutMe = () => {
                     <div className="color-1B1B1B mar-bottom-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sint, dolores atque esse aspernatur voluptates enim nemo, tenetur ratione necessitatibus iste, maxime similique iusto ad libero provident aliquid hic quam.</div>
                     <div className="color-1B1B1B mar-bottom-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis ducimus tempore, libero temporibus porro?</div>
                     <div className="about__wrapper-buttons flex-row align-items-center">
-                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer translate-y-2 mar-right-20">Introduction</div>
-                        <div className="orange-gradient width-150px flex-row align-items-center justify-content-center color-white bor-radius-30 translate-y-2 cursor-pointer">
+                        <div className="primary-background width-150px flex-row align-items-center justify-content-center ver-pad-8 color-white bor-radius-30 cursor-pointer translate-y-2 mar-right-20">Introduction</div>
+                        <div className="primary-background width-150px flex-row align-items-center justify-content-center color-white bor-radius-30 translate-y-2 cursor-pointer">
                             <div className="orange-gradient-border-button width-100 flex-row justify-content-center color-1B1B1B bgcolor-white bor-radius-30">Learn More</div>
                         </div>
                     </div>
