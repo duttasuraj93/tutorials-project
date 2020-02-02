@@ -43,13 +43,17 @@ class ContactForm extends Component {
             <form onSubmit={(e) => this.handleContactFormSubmit(e)}>
                 <div className="pos-relative flex-col mar-bottom-20">
                     <div className="color-1B1B1B mar-bottom-10">Name</div>
-                    <input required onChange={(e) => this.handleContactFormName(e)} className="contact-form-input box-shadow-1 width-100 border-none outline-none height-40px bgcolor-f6f6f6 font-size-1 bor-radius-4 hor-pad-12" type="text"/>
-                    <div className="input__animation pos-absolute height-width-3 primary-background"></div>
+                    <label>
+                        <input required onChange={(e) => this.handleContactFormName(e)} className="contact-form-input box-shadow-1 width-100 border-none outline-none height-40px bgcolor-f6f6f6 font-size-1 bor-radius-4 hor-pad-12" type="text"/>
+                        <div className="input__animation pos-absolute height-width-3 primary-background"></div>
+                    </label>
                 </div>
                 <div className="pos-relative flex-col mar-bottom-20">
                     <div className="color-1B1B1B mar-bottom-10">Email Address</div>
-                    <input required onChange={(e) => this.handleContactFormEmail(e)} className="contact-form-input box-shadow-1 width-100 border-none outline-none height-40px bgcolor-f6f6f6 font-size-1 bor-radius-4 hor-pad-12" type="email"/>
-                    <div className="input__animation pos-absolute height-width-3 primary-background"></div>
+                    <label>
+                        <input required onChange={(e) => this.handleContactFormEmail(e)} className="contact-form-input box-shadow-1 width-100 border-none outline-none height-40px bgcolor-f6f6f6 font-size-1 bor-radius-4 hor-pad-12" type="email"/>
+                        <div className="input__animation pos-absolute height-width-3 primary-background"></div>
+                    </label>
                 </div>
                 <div className="pos-relative flex-col mar-bottom-20">
                     <div className="color-1B1B1B mar-bottom-10">Message</div>
