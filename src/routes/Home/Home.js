@@ -28,9 +28,11 @@ class Home extends Component {
     
         return ( 
             <div>
-                <Navbar />
+                <div className="bgcolor-something">
+                    <Navbar />
 
-                <StartingSection />
+                    <StartingSection />
+                </div>
                 
                 {/* <Slide bottom ssrFadeout>
                     <AboutMe />
